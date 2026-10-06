@@ -1,0 +1,625 @@
+\/* =========================================
+   CloudForge Landing Page
+   ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    background: #FFFFFF;
+    color: #0f172a;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   Navigation
+   ========================================= */
+
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-content {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 21px;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.logo-icon {
+    .logo-icon {
+width: 36px;
+height: 36px;
+    display: block;
+    object-fit: contain;
+}
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    font-size: 14px;
+    color: #475569;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #2EC4B6;
+}
+
+.github-btn {
+    padding: 10px 18px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    background: white;
+    transition: 0.2s;
+}
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-demo-btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: #2EC4B6;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.nav-demo-btn:hover {
+    background: #239B90;
+    transform: translateY(-1px);
+}
+.github-btn:hover {
+    border-color: #2EC4B6;
+    color: #2EC4B6;
+}
+
+
+/* =========================================
+   Hero
+   ========================================= */
+
+.hero {
+    padding: 90px 0 80px;
+    background:
+        radial-gradient(circle at 85% 30%, #EBF5FB 0, transparent 30%),
+        linear-gradient(180deg, #ffffff 0%, #FFFFFF 100%);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.badge,
+.section-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    color: #2EC4B6;
+    margin-bottom: 16px;
+}
+
+.hero h1 {
+    max-width: 650px;
+    font-size: clamp(52px, 6vw, 78px);
+    line-height: 0.98;
+    letter-spacing: -3px;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #2EC4B6;
+}
+
+.hero-content > p {
+    max-width: 590px;
+    color: #64748b;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 40px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 21px;
+    border-radius: 9px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.primary-btn {
+    background: #2EC4B6;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #239B90;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    border: 1px solid #cbd5e1;
+    background: white;
+}
+
+.secondary-btn:hover {
+    border-color: #2EC4B6;
+    color: #2EC4B6;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 35px;
+}
+
+.hero-stats div {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-stats strong {
+    font-size: 16px;
+}
+
+.hero-stats span {
+    font-size: 12px;
+    color: #64748b;
+}
+
+
+/* =========================================
+   Hero Visual
+   ========================================= */
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.cloud-card {
+    width: min(470px, 100%);
+    min-height: 430px;
+    padding: 45px 38px;
+    border-radius: 24px;
+    background: white;
+    border: 1px solid #EBF5FB;
+    box-shadow: 0 25px 60px rgba(15, 23, 42, 0.10);
+    text-align: center;
+}
+
+.cloud-symbol {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 25px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #eff6ff;
+    color: #2EC4B6;
+    font-size: 52px;
+}
+
+.cloud-card h3 {
+    font-size: 25px;
+    margin-bottom: 4px;
+}
+
+.cloud-card > p {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+.pipeline {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.pipeline-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px;
+    background: #FFFFFF;
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+    text-align: left;
+}
+
+.pipeline-item span {
+    color: #2EC4B6;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.pipeline-item strong {
+    font-size: 13px;
+}
+
+.pipeline-line {
+    height: 15px;
+    width: 2px;
+    margin-left: 26px;
+    background: #bfdbfe;
+}
+
+
+/* =========================================
+   Sections
+   ========================================= */
+
+.section {
+    padding: 100px 0;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    margin-bottom: 15px;
+}
+
+.section-heading p {
+    color: #64748b;
+    font-size: 17px;
+}
+
+
+/* =========================================
+   Features
+   ========================================= */
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.feature-card {
+    padding: 28px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    transition: 0.2s;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    border-color: #bfdbfe;
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.07);
+}
+
+.feature-icon {
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: #eff6ff;
+    font-size: 21px;
+}
+
+.feature-card h3 {
+    font-size: 17px;
+    margin-bottom: 9px;
+}
+
+.feature-card p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   Architecture
+   ========================================= */
+
+.architecture-section {
+    background: #0f172a;
+    color: white;
+}
+
+.architecture-section .section-heading p {
+    color: #94a3b8;
+}
+
+.architecture-section .section-label {
+    color: #2EC4B6;
+}
+
+.architecture-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    flex-wrap: wrap;
+}
+
+.architecture-node {
+    min-width: 150px;
+    padding: 22px 18px;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    background: #1e293b;
+}
+
+.architecture-node span {
+    display: block;
+    color: #FF9F1C;
+    font-size: 11px;
+    font-weight: 800;
+    margin-bottom: 7px;
+}
+
+.architecture-node strong {
+    display: block;
+    font-size: 15px;
+}
+
+.architecture-node small {
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+.flow-arrow {
+    color: #2EC4B6;
+    font-size: 24px;
+}
+
+
+/* =========================================
+   Technology Stack
+   ========================================= */
+
+.stack-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.stack-item {
+    padding: 24px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.stack-item strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.stack-item span {
+    color: #64748b;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   About
+   ========================================= */
+
+.about-section {
+    padding-top: 30px;
+}
+
+.about-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    padding: 60px;
+    border-radius: 20px;
+    background: #eff6ff;
+}
+
+.about-card h2 {
+    font-size: 38px;
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.about-card p {
+    align-self: center;
+    color: #475569;
+    font-size: 17px;
+}
+
+
+/* =========================================
+   CTA
+   ========================================= */
+
+.cta-section {
+    padding: 100px 0;
+    text-align: center;
+    background: white;
+    border-top: 1px solid #e2e8f0;
+}
+
+.cta-section h2 {
+    font-size: 45px;
+    letter-spacing: -1.5px;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   Footer
+   ========================================= */
+
+footer {
+    background: #0f172a;
+    color: white;
+    padding: 30px 0;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-content div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.footer-content strong {
+    font-size: 16px;
+}
+
+.footer-content span,
+.footer-content p {
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   Responsive
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+    }
+
+    .feature-grid,
+    .stack-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-card {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+        letter-spacing: -2px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-stats {
+        gap: 20px;
+    }
+
+    .feature-grid,
+    .stack-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .about-card {
+        padding: 35px;
+    }
+
+    .cta-section h2 {
+        font-size: 34px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
