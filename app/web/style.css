@@ -437,3 +437,496 @@ body.dark-mode .platform-core {
   height: 27px;
   display: block;
 }
+
+/* =========================================
+   CloudForge Premium Visual Layer
+   ========================================= */
+
+body {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(46,196,182,.10), transparent 26%),
+    radial-gradient(circle at 88% 24%, rgba(255,153,200,.09), transparent 24%),
+    #FFFFFF;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(46,196,182,.08), transparent 30%),
+    linear-gradient(180deg, #FFFFFF 0%, #EBF5FB 100%);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: .32;
+  background-image:
+    linear-gradient(rgba(46,196,182,.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(46,196,182,.07) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: linear-gradient(to bottom, black, transparent 78%);
+}
+
+.hero-content,
+.hero-diagram {
+  position: relative;
+  z-index: 1;
+}
+
+body.dark-mode {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(46,196,182,.07), transparent 28%),
+    radial-gradient(circle at 88% 24%, rgba(255,153,200,.06), transparent 25%),
+    #151B2E;
+}
+
+body.dark-mode .hero {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(46,196,182,.08), transparent 30%),
+    linear-gradient(180deg, #151B2E 0%, #1B2438 100%);
+}
+
+body.dark-mode .hero::before {
+  opacity: .18;
+  background-image:
+    linear-gradient(rgba(46,196,182,.10) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(46,196,182,.10) 1px, transparent 1px);
+}
+
+/* =========================================
+   Premium Capability Cards
+   ========================================= */
+
+.capability-strip {
+  position: relative;
+  padding: 22px 0;
+  background: rgba(255,255,255,.72);
+  backdrop-filter: blur(12px);
+}
+
+.capability {
+  position: relative;
+  min-height: 82px;
+  padding: 14px 12px;
+  border: 1px solid rgba(214,226,236,.9);
+  border-radius: 12px;
+  background: rgba(255,255,255,.82);
+  box-shadow: 0 8px 24px rgba(43,45,66,.045);
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+
+.capability:hover {
+  transform: translateY(-5px);
+  border-color: rgba(46,196,182,.45);
+  box-shadow:
+    0 14px 30px rgba(43,45,66,.08),
+    0 0 24px rgba(46,196,182,.10);
+}
+
+.capability::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(46,196,182,.8),
+    rgba(255,153,200,.55)
+  );
+  opacity: .45;
+}
+
+.cap-icon {
+  transition: transform .22s ease;
+}
+
+.capability:hover .cap-icon {
+  transform: scale(1.08);
+}
+
+body.dark-mode .capability-strip {
+  background: rgba(27,36,56,.78);
+}
+
+body.dark-mode .capability {
+  background: rgba(34,44,64,.86);
+  border-color: rgba(52,66,88,.9);
+  box-shadow: 0 10px 26px rgba(0,0,0,.16);
+}
+
+body.dark-mode .capability:hover {
+  border-color: rgba(46,196,182,.5);
+  box-shadow:
+    0 16px 32px rgba(0,0,0,.25),
+    0 0 25px rgba(46,196,182,.10);
+}
+
+/* =========================================
+   Premium Technology Stack
+   ========================================= */
+
+.stack-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.stack-section::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  top: 10%;
+  left: -180px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(46,196,182,.10),
+    transparent 68%
+  );
+  pointer-events: none;
+}
+
+.stack-section::after {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  right: -150px;
+  bottom: -120px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255,153,200,.09),
+    transparent 68%
+  );
+  pointer-events: none;
+}
+
+.stack-grid {
+  position: relative;
+  z-index: 1;
+  gap: 16px;
+}
+
+.stack-card {
+  min-height: 112px;
+  padding: 22px 20px 18px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.88);
+  border: 1px solid #DCE7EF;
+  box-shadow:
+    0 8px 24px rgba(43,45,66,.045),
+    inset 0 1px 0 rgba(255,255,255,.8);
+  transition:
+    transform .22s ease,
+    box-shadow .22s ease,
+    border-color .22s ease;
+}
+
+.stack-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(46,196,182,.42);
+  box-shadow:
+    0 16px 34px rgba(43,45,66,.09),
+    0 0 28px rgba(46,196,182,.08);
+}
+
+.stack-card::before {
+  height: 3px;
+  opacity: .75;
+  transition: opacity .2s ease;
+}
+
+.stack-card:hover::before {
+  opacity: 1;
+}
+
+.stack-card strong {
+  font-size: 13px;
+  margin-top: 7px;
+  letter-spacing: -.01em;
+}
+
+.stack-card small {
+  margin-top: 4px;
+  font-size: 10px;
+}
+
+.stack-card .stack-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: 0 0 12px currentColor;
+}
+
+/* Individual tool accents */
+.stack-card:nth-child(1)::before,
+.stack-card:nth-child(3)::before,
+.stack-card:nth-child(6)::before {
+  background: #2EC4B6;
+}
+
+.stack-card:nth-child(2)::before,
+.stack-card:nth-child(5)::before,
+.stack-card:nth-child(8)::before {
+  background: #FF9F1C;
+}
+
+.stack-card:nth-child(4)::before,
+.stack-card:nth-child(7)::before {
+  background: #FF99C8;
+}
+
+body.dark-mode .stack-section {
+  background:
+    radial-gradient(circle at 12% 20%, rgba(46,196,182,.06), transparent 28%),
+    #151B2E;
+}
+
+body.dark-mode .stack-section::before {
+  background: radial-gradient(
+    circle,
+    rgba(46,196,182,.08),
+    transparent 68%
+  );
+}
+
+body.dark-mode .stack-section::after {
+  background: radial-gradient(
+    circle,
+    rgba(255,153,200,.06),
+    transparent 68%
+  );
+}
+
+body.dark-mode .stack-card {
+  background: rgba(34,44,64,.88);
+  border-color: #344258;
+  box-shadow:
+    0 10px 28px rgba(0,0,0,.16),
+    inset 0 1px 0 rgba(255,255,255,.025);
+}
+
+body.dark-mode .stack-card:hover {
+  border-color: rgba(46,196,182,.45);
+  box-shadow:
+    0 18px 34px rgba(0,0,0,.25),
+    0 0 28px rgba(46,196,182,.09);
+}
+
+/* =========================================
+   Technology Stack — Real Tool Icons
+   ========================================= */
+
+.stack-card {
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
+.stack-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 7px;
+  border-radius: 10px;
+  background: #F5F9FC;
+  border: 1px solid #E3ECF3;
+}
+
+.stack-icon img {
+  width: 25px;
+  height: 25px;
+  display: block;
+}
+
+.stack-card strong {
+  margin-top: 0;
+}
+
+body.dark-mode .stack-icon {
+  background: #1B2639;
+  border-color: #3A485D;
+}
+
+body.dark-mode .stack-card small {
+  color: #9AA9BE;
+}
+
+/* AWS brand mark - give it proper visual weight */
+.stack-card:nth-child(8) .stack-icon {
+  width: 48px;
+  height: 42px;
+}
+
+.stack-card:nth-child(8) .stack-icon img {
+  width: 36px;
+  height: 36px;
+}
+
+
+/* ================================
+   CloudForge Architecture Pipeline
+   ================================ */
+
+.architecture-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.architecture-flow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 42px;
+  padding: 28px 18px;
+  border: 1px solid rgba(52,66,88,.75);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 18% 50%, rgba(46,196,182,.09), transparent 25%),
+    radial-gradient(circle at 82% 50%, rgba(255,153,200,.07), transparent 25%),
+    #111827;
+  box-shadow:
+    0 22px 55px rgba(15,21,36,.18),
+    inset 0 1px 0 rgba(255,255,255,.035);
+}
+
+.architecture-flow::before {
+  content: "";
+  position: absolute;
+  left: 6%;
+  right: 6%;
+  top: 50%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(46,196,182,.42),
+    rgba(255,153,200,.35),
+    transparent
+  );
+  z-index: 0;
+}
+
+.architecture-node {
+  position: relative;
+  z-index: 2;
+  width: 132px;
+  min-height: 145px;
+  padding: 15px 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border: 1px solid #344258;
+  border-radius: 14px;
+  background: rgba(27,36,56,.92);
+  box-shadow:
+    0 12px 28px rgba(0,0,0,.18),
+    inset 0 1px 0 rgba(255,255,255,.035);
+  transition:
+    transform .22s ease,
+    border-color .22s ease,
+    box-shadow .22s ease;
+}
+
+.architecture-node:hover {
+  transform: translateY(-6px);
+  border-color: rgba(46,196,182,.55);
+  box-shadow:
+    0 18px 34px rgba(0,0,0,.25),
+    0 0 26px rgba(46,196,182,.09);
+}
+
+.arch-number {
+  position: absolute;
+  top: 11px;
+  right: 12px;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  color: #6F8097;
+}
+
+.arch-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 13px;
+  border-radius: 10px;
+  background: #202B40;
+  border: 1px solid #3A485D;
+}
+
+.arch-icon svg {
+  width: 23px;
+  height: 23px;
+}
+
+.github-arch { color: #FFFFFF; }
+.cicd-arch { color: #2EC4B6; }
+.docker-arch { color: #2496ED; }
+.k8s-arch { color: #326CE5; }
+.deploy-arch { color: #FF9F1C; }
+.observe-arch { color: #FF99C8; }
+
+.architecture-node strong {
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.architecture-node small {
+  margin-top: 5px;
+  color: #94A3B8;
+  font-size: 9px;
+  line-height: 1.35;
+}
+
+.flow-arrow {
+  position: relative;
+  z-index: 3;
+  flex: 0 0 auto;
+  color: #2EC4B6;
+  font-size: 22px;
+  font-weight: 600;
+  text-shadow: 0 0 14px rgba(46,196,182,.35);
+}
+
+@media (max-width: 1050px) {
+  .architecture-flow {
+    flex-wrap: wrap;
+  }
+
+  .architecture-flow::before {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .architecture-flow {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .architecture-node {
+    width: 100%;
+    min-height: 105px;
+  }
+
+  .flow-arrow {
+    transform: rotate(90deg);
+    justify-self: center;
+  }
+}
+

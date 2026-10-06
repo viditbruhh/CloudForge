@@ -29,7 +29,7 @@
 
       <div class="nav-actions">
         <a href="https://github.com/viditbruhh/CloudForge" class="github-btn" target="_blank" rel="noreferrer">GitHub ↗</a>
-        <a href="#architecture" class="nav-demo-btn">Live Demo ↗</a>
+        <a href="demo.html" class="nav-demo-btn">Live Demo ↗</a>
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
       </div>
     </div>
@@ -43,7 +43,7 @@
           <h1>Build. <span>Deploy.</span><br>Observe. Scale.</h1>
           <p>CloudForge is a production-style DevOps platform that brings together the best tools — from code to cloud, with security, observability, and automation built in.</p>
           <div class="hero-actions">
-            <a href="#architecture" class="primary-btn">Live Demo <span>↗</span></a>
+            <a href="demo.html" class="primary-btn">Live Demo <span>↗</span></a>
             <a href="https://github.com/viditbruhh/CloudForge" class="secondary-btn" target="_blank" rel="noreferrer"><span class="github-mark">●</span> View on GitHub</a>
           </div>
           <div class="hero-proof">
@@ -156,15 +156,88 @@
           <p>A simple, automated path from developer commit to cloud deployment.</p>
         </div>
         <div class="architecture-flow">
-          <div class="architecture-node"><span>01</span><strong>GitHub</strong><small>Source Code</small></div>
+
+          <div class="architecture-node">
+            <span class="arch-number">01</span>
+            <span class="arch-icon github-arch">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M12 .7A11.3 11.3 0 0 0 8.4 22.6c.57.1.78-.25.78-.55v-2.1c-3.18.69-3.85-1.34-3.85-1.34-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.25 3.32.96.1-.74.4-1.25.72-1.54-2.54-.29-5.21-1.27-5.21-5.66 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.12 1.17A10.8 10.8 0 0 1 12 5.9c.97 0 1.94.13 2.84.38 2.16-1.48 3.12-1.17 3.12-1.17.62 1.57.23 2.73.11 3.02.73.8 1.18 1.82 1.18 3.07 0 4.4-2.67 5.36-5.22 5.65.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.79.55A11.3 11.3 0 0 0 12 .7Z"/>
+              </svg>
+            </span>
+            <strong>GitHub</strong>
+            <small>Source Code</small>
+          </div>
+
           <div class="flow-arrow">→</div>
-          <div class="architecture-node"><span>02</span><strong>CI/CD</strong><small>Build &amp; Test</small></div>
+
+          <div class="architecture-node">
+            <span class="arch-number">02</span>
+            <span class="arch-icon cicd-arch">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 5h9l-2.5-2.5M16 5l-2.5 2.5M17 19H8l2.5 2.5M8 19l2.5-2.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 7.5A7 7 0 0 0 7 19M19 16.5A7 7 0 0 0 17 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <strong>CI/CD</strong>
+            <small>Build &amp; Test</small>
+          </div>
+
           <div class="flow-arrow">→</div>
-          <div class="architecture-node"><span>03</span><strong>Docker</strong><small>Container</small></div>
+
+          <div class="architecture-node">
+            <span class="arch-number">03</span>
+            <span class="arch-icon docker-arch">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 13h18M5 10h3V7H5v3Zm4 0h3V7H9v3Zm4 0h3V7h-3v3Zm-8-4h3V3H5v3Zm4 0h3V3H9v3Z" fill="currentColor"/>
+                <path d="M3 14c1 4 4 6 8 6 4.7 0 7.6-2.2 9-6.2-1.7.4-3.2.2-4.5-.4-1.3.6-2.8.8-4.5.6-2.3.9-5 .7-8-.0Z" fill="currentColor"/>
+              </svg>
+            </span>
+            <strong>Docker</strong>
+            <small>Containerize</small>
+          </div>
+
           <div class="flow-arrow">→</div>
-          <div class="architecture-node"><span>04</span><strong>Kubernetes</strong><small>Deploy &amp; Scale</small></div>
+
+          <div class="architecture-node">
+            <span class="arch-number">04</span>
+            <span class="arch-icon k8s-arch">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2.5 19.8 7v10L12 21.5 4.2 17V7L12 2.5Z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="12" cy="12" r="2.5" fill="currentColor"/>
+                <path d="m12 4.8 1.1 4.5M18.2 8.4l-4.2 2.2M18.2 15.6 14 13.4M12 19.2l-1.1-4.5M5.8 15.6l4.2-2.2M5.8 8.4l4.2 2.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <strong>Kubernetes</strong>
+            <small>Orchestrate</small>
+          </div>
+
           <div class="flow-arrow">→</div>
-          <div class="architecture-node"><span>05</span><strong>Cloud</strong><small>Production</small></div>
+
+          <div class="architecture-node">
+            <span class="arch-number">05</span>
+            <span class="arch-icon deploy-arch">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 20V5M7 10l5-5 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <strong>Deploy</strong>
+            <small>Release</small>
+          </div>
+
+          <div class="flow-arrow">→</div>
+
+          <div class="architecture-node">
+            <span class="arch-number">06</span>
+            <span class="arch-icon observe-arch">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 16h4l2.5-7 4 11L16 13h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <strong>Observe</strong>
+            <small>Metrics &amp; Alerts</small>
+          </div>
+
         </div>
       </div>
     </section>
@@ -177,14 +250,39 @@
           <p>Every layer of CloudForge is chosen to demonstrate practical platform engineering skills.</p>
         </div>
         <div class="stack-grid">
-          <div class="stack-card"><span class="stack-dot mint-dot"></span><strong>Python</strong><small>Application</small></div>
-          <div class="stack-card"><span class="stack-dot orange-dot"></span><strong>Docker</strong><small>Containers</small></div>
-          <div class="stack-card"><span class="stack-dot mint-dot"></span><strong>Kubernetes</strong><small>Orchestration</small></div>
-          <div class="stack-card"><span class="stack-dot pink-dot"></span><strong>GitHub Actions</strong><small>CI/CD</small></div>
-          <div class="stack-card"><span class="stack-dot orange-dot"></span><strong>Terraform</strong><small>Infrastructure</small></div>
-          <div class="stack-card"><span class="stack-dot mint-dot"></span><strong>Prometheus</strong><small>Monitoring</small></div>
-          <div class="stack-card"><span class="stack-dot pink-dot"></span><strong>Grafana</strong><small>Observability</small></div>
-          <div class="stack-card"><span class="stack-dot orange-dot"></span><strong>AWS</strong><small>Cloud</small></div>
+          <div class="stack-card"><span class="stack-icon">
+  <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python">
+</span><strong>Python</strong><small>Application</small></div>
+          <div class="stack-card"><span class="stack-icon">
+  <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker">
+</span><strong>Docker</strong><small>Containers</small></div>
+          <div class="stack-card"><span class="stack-icon">
+  <img src="https://cdn.simpleicons.org/kubernetes/326CE5" alt="Kubernetes">
+</span><strong>Kubernetes</strong><small>Orchestration</small></div>
+          <div class="stack-card"><span class="stack-icon">
+  <img src="https://cdn.simpleicons.org/githubactions/2088FF" alt="GitHub Actions">
+</span><strong>GitHub Actions</strong><small>CI/CD</small></div>
+          <div class="stack-card"><span class="stack-icon">
+  <img src="https://cdn.simpleicons.org/terraform/844FBA" alt="Terraform">
+</span><strong>Terraform</strong><small>Infrastructure</small></div>
+          <div class="stack-card"><span class="stack-icon">
+  <img src="https://cdn.simpleicons.org/prometheus/E6522C" alt="Prometheus">
+</span><strong>Prometheus</strong><small>Monitoring</small></div>
+          <div class="stack-card"><span class="stack-icon">
+  <img src="https://cdn.simpleicons.org/grafana/F46800" alt="Grafana">
+</span><strong>Grafana</strong><small>Observability</small></div>
+          <div class="stack-card">
+  <span class="stack-icon">
+    <svg viewBox="0 0 48 48" width="28" height="28" aria-label="GitOps" role="img">
+      <circle cx="12" cy="12" r="5" fill="none" stroke="#FF9F1C" stroke-width="3"/>
+      <circle cx="36" cy="12" r="5" fill="none" stroke="#FF9F1C" stroke-width="3"/>
+      <circle cx="24" cy="36" r="5" fill="none" stroke="#FF9F1C" stroke-width="3"/>
+      <path d="M17 12h14M14.5 16.5L21 31M33.5 16.5L27 31" fill="none" stroke="#FF9F1C" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+  </span>
+  <strong>GitOps</strong>
+  <small>Continuous Delivery</small>
+</div>
         </div>
       </div>
     </section>
