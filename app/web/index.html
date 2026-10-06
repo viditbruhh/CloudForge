@@ -1,386 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CloudForge - Build. Deploy. Observe. Scale.">
-    <title>CloudForge | DevOps Platform</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CloudForge — a cloud-native DevOps platform for building, deploying, observing, and scaling modern applications.">
+  <title>CloudForge | Cloud-Native DevOps Platform</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo" aria-label="CloudForge home">
+        <img src="logo.svg" class="logo-icon" alt="CloudForge logo">
+        <span>Cloud<span>Forge</span></span>
+      </a>
 
-    <!-- Navigation -->
-    <header class="navbar">
-        <div class="container nav-content">
-            <a href="#" class="logo">
-                <img src="logo.svg" class="logo-icon" alt="CloudForge logo">
-                CloudForge
-            </a>
+      <nav aria-label="Primary navigation">
+        <a class="active" href="#">Home</a>
+        <a href="#features">Features</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#stack">Tech Stack</a>
+        <a href="#about">About</a>
+      </nav>
 
-            <nav>
-    <a href="#">Home</a>
-    <a href="#features">Features</a>
-    <a href="#architecture">Architecture</a>
-    <a href="#stack">Tech Stack</a>
-    <a href="#about">About</a>
-</nav>
+      <div class="nav-actions">
+        <a href="https://github.com/viditbruhh/CloudForge" class="github-btn" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href="#architecture" class="nav-demo-btn">Live Demo ↗</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+      </div>
+    </div>
+  </header>
 
-<div class="nav-actions">
-    <a href="https://github.com/viditbruhh/CloudForge"
-       class="github-btn"
-       target="_blank">
-        GitHub ↗
-    </a>
-
-    <a href="#architecture" class="nav-demo-btn">
-        Live Demo ↗
-    </a>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">CLOUD-NATIVE DEVOPS PLATFORM</span>
+          <h1>Build. <span>Deploy.</span><br>Observe. Scale.</h1>
+          <p>CloudForge is a production-style DevOps platform that brings together the best tools — from code to cloud, with security, observability, and automation built in.</p>
+          <div class="hero-actions">
+            <a href="#architecture" class="primary-btn">Live Demo <span>↗</span></a>
+            <a href="https://github.com/viditbruhh/CloudForge" class="secondary-btn" target="_blank" rel="noreferrer"><span class="github-mark">●</span> View on GitHub</a>
+          </div>
+          <div class="hero-proof">
+            <div><strong>CI/CD</strong><span>Automation</span></div>
+            <div><strong>K8s</strong><span>Orchestration</span></div>
+            <div><strong>Cloud</strong><span>Production</span></div>
+          </div>
         </div>
-    </header>
 
-
-    <!-- Hero Section -->
-    <main>
-
-        <section class="hero">
-            <div class="container hero-grid">
-
-                <div class="hero-content">
-                    <span class="badge">CLOUD-NATIVE DEVOPS PLATFORM</span>
-
-                    <h1>
-                        Build.
-                        <span>Deploy.</span>
-                        Observe.
-                        Scale.
-                    </h1>
-
-                    <p>
-                        CloudForge is an end-to-end DevOps platform designed
-                        to automate application delivery, deployment,
-                        monitoring, and cloud operations.
-                    </p>
-
-                    <div class="hero-buttons">
-                        <a href="#architecture" class="primary-btn">
-                            Explore CloudForge →
-                        </a>
-
-                        <a href="https://github.com/viditbruhh/CloudForge"
-                           class="secondary-btn"
-                           target="_blank">
-                            View GitHub
-                        </a>
-                    </div>
-
-                    <div class="hero-stats">
-                        <div>
-                            <strong>CI/CD</strong>
-                            <span>Automation</span>
-                        </div>
-
-                        <div>
-                            <strong>K8s</strong>
-                            <span>Orchestration</span>
-                        </div>
-
-                        <div>
-                            <strong>Cloud</strong>
-                            <span>Ready</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Hero Visual -->
-                <div class="hero-visual">
-
-                    <div class="cloud-card">
-
-                        <div class="cloud-symbol">☁</div>
-
-                        <h3>CloudForge</h3>
-                        <p>DevOps Pipeline</p>
-
-                        <div class="pipeline">
-
-                            <div class="pipeline-item">
-                                <span>01</span>
-                                <strong>Code</strong>
-                            </div>
-
-                            <div class="pipeline-line"></div>
-
-                            <div class="pipeline-item">
-                                <span>02</span>
-                                <strong>CI/CD</strong>
-                            </div>
-
-                            <div class="pipeline-line"></div>
-
-                            <div class="pipeline-item">
-                                <span>03</span>
-                                <strong>Docker</strong>
-                            </div>
-
-                            <div class="pipeline-line"></div>
-
-                            <div class="pipeline-item">
-                                <span>04</span>
-                                <strong>Kubernetes</strong>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- Features -->
-        <section id="features" class="section">
-            <div class="container">
-
-                <div class="section-heading">
-                    <span class="section-label">CAPABILITIES</span>
-
-                    <h2>Everything your deployment pipeline needs.</h2>
-
-                    <p>
-                        CloudForge brings development, deployment,
-                        security, and observability into one workflow.
-                    </p>
-                </div>
-
-                <div class="feature-grid">
-
-                    <article class="feature-card">
-                        <div class="feature-icon">⚡</div>
-                        <h3>CI/CD Automation</h3>
-                        <p>
-                            Automate testing, building, and deployment
-                            with modern CI/CD workflows.
-                        </p>
-                    </article>
-
-                    <article class="feature-card">
-                        <div class="feature-icon">🐳</div>
-                        <h3>Containerization</h3>
-                        <p>
-                            Package applications consistently using
-                            Docker containers.
-                        </p>
-                    </article>
-
-                    <article class="feature-card">
-                        <div class="feature-icon">☸</div>
-                        <h3>Kubernetes</h3>
-                        <p>
-                            Orchestrate and scale containerized
-                            workloads across environments.
-                        </p>
-                    </article>
-
-                    <article class="feature-card">
-                        <div class="feature-icon">📊</div>
-                        <h3>Observability</h3>
-                        <p>
-                            Monitor applications and infrastructure
-                            with Prometheus and Grafana.
-                        </p>
-                    </article>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- Architecture -->
-        <section id="architecture" class="section architecture-section">
-            <div class="container">
-
-                <div class="section-heading">
-                    <span class="section-label">ARCHITECTURE</span>
-
-                    <h2>From code to production.</h2>
-
-                    <p>
-                        A simple, automated path from developer commit
-                        to cloud deployment.
-                    </p>
-                </div>
-
-                <div class="architecture-flow">
-
-                    <div class="architecture-node">
-                        <span>01</span>
-                        <strong>GitHub</strong>
-                        <small>Source Code</small>
-                    </div>
-
-                    <div class="flow-arrow">→</div>
-
-                    <div class="architecture-node">
-                        <span>02</span>
-                        <strong>CI/CD</strong>
-                        <small>Build & Test</small>
-                    </div>
-
-                    <div class="flow-arrow">→</div>
-
-                    <div class="architecture-node">
-                        <span>03</span>
-                        <strong>Docker</strong>
-                        <small>Container</small>
-                    </div>
-
-                    <div class="flow-arrow">→</div>
-
-                    <div class="architecture-node">
-                        <span>04</span>
-                        <strong>Kubernetes</strong>
-                        <small>Deploy & Scale</small>
-                    </div>
-
-                    <div class="flow-arrow">→</div>
-
-                    <div class="architecture-node">
-                        <span>05</span>
-                        <strong>Cloud</strong>
-                        <small>Production</small>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- Tech Stack -->
-        <section id="stack" class="section">
-            <div class="container">
-
-                <div class="section-heading">
-                    <span class="section-label">TECHNOLOGY</span>
-
-                    <h2>Built with modern DevOps tools.</h2>
-                </div>
-
-                <div class="stack-grid">
-
-                    <div class="stack-item">
-                        <strong>Python</strong>
-                        <span>Application</span>
-                    </div>
-
-                    <div class="stack-item">
-                        <strong>Docker</strong>
-                        <span>Containers</span>
-                    </div>
-
-                    <div class="stack-item">
-                        <strong>Kubernetes</strong>
-                        <span>Orchestration</span>
-                    </div>
-
-                    <div class="stack-item">
-                        <strong>GitHub Actions</strong>
-                        <span>CI/CD</span>
-                    </div>
-
-                    <div class="stack-item">
-                        <strong>Terraform</strong>
-                        <span>Infrastructure</span>
-                    </div>
-
-                    <div class="stack-item">
-                        <strong>Prometheus</strong>
-                        <span>Monitoring</span>
-                    </div>
-
-                    <div class="stack-item">
-                        <strong>Grafana</strong>
-                        <span>Observability</span>
-                    </div>
-
-                    <div class="stack-item">
-                        <strong>AWS</strong>
-                        <span>Cloud</span>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- About -->
-        <section id="about" class="section about-section">
-            <div class="container about-card">
-
-                <div>
-                    <span class="section-label">WHY CLOUDFORGE?</span>
-
-                    <h2>
-                        Modern applications are complex.
-                        Deployment shouldn't be.
-                    </h2>
-                </div>
-
-                <p>
-                    CloudForge demonstrates how modern DevOps practices
-                    can connect source control, automation, containers,
-                    orchestration, infrastructure, security, and
-                    observability into one streamlined platform.
-                </p>
-
-            </div>
-        </section>
-
-
-        <!-- CTA -->
-        <section class="cta-section">
-            <div class="container">
-
-                <h2>Build something that scales.</h2>
-
-                <p>
-                    Explore CloudForge and follow the journey from
-                    source code to cloud-native deployment.
-                </p>
-
-                <a href="https://github.com/viditbruhh/CloudForge"
-                   class="primary-btn"
-                   target="_blank">
-                    Explore on GitHub →
-                </a>
-
-            </div>
-        </section>
-
-    </main>
-
-
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-
-            <div>
-                <strong>☁ CloudForge</strong>
-                <span>Cloud-native DevOps platform.</span>
-            </div>
-
-            <p>
-                Built for learning. Designed for scale.
-            </p>
-
+        <div class="hero-diagram" aria-label="CloudForge DevOps platform architecture illustration">
+          <div class="diagram-glow"></div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="diagram-node node-code"><span class="node-icon mint">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+        <path d="M12 .5a11.5 11.5 0 0 0-3.63 22.41c.58.11.79-.25.79-.56v-2.16c-3.2.7-3.87-1.54-3.87-1.54-.53-1.36-1.3-1.72-1.3-1.72-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.74 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.73 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.77.11 3.06.73.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.35.77 1.04.77 2.1v3.11c0 .31.21.68.8.56A11.5 11.5 0 0 0 12 .5Z"/>
+      </svg>
+    </span><b>Code</b></div>
+          <div class="diagram-node node-cicd"><span class="node-icon mint">
+      <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 12a8 8 0 0 1 13.7-5.7L20 8.5"/>
+        <path d="M20 4v4.5h-4.5"/>
+        <path d="M20 12a8 8 0 0 1-13.7 5.7L4 15.5"/>
+        <path d="M4 20v-4.5h4.5"/>
+      </svg>
+    </span><b>CI/CD</b></div>
+          <div class="diagram-node node-security"><span class="node-icon pink">
+      <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 3 19 6v5c0 4.8-3 8.5-7 10-4-1.5-7-5.2-7-10V6l7-3Z"/>
+        <path d="m8.5 12 2.2 2.2 4.8-5"/>
+      </svg>
+    </span><b>Security</b></div>
+          <div class="diagram-node node-monitor"><span class="node-icon mint">
+      <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 15c2.5-5 5.5-5 8 0s5.5 5 8 0"/>
+        <path d="M4 9c2.5-5 5.5-5 8 0s5.5 5 8 0"/>
+      </svg>
+    </span><b>Monitoring</b></div>
+          <div class="diagram-node node-ai"><span class="node-icon pink">
+      <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M12 3c.7 4.3 2.7 6.3 7 7-4.3.7-6.3 2.7-7 7-.7-4.3-2.7-6.3-7-7 4.3-.7 6.3-2.7 7-7Z"/>
+        <path d="M19 3v4M17 5h4M5 17v4M3 19h4"/>
+      </svg>
+    </span><b>AIOps</b></div>
+          <div class="platform-core">
+            <div class="core-logo"><img src="logo.svg" alt=""></div>
+            <strong>CloudForge</strong>
+            <span>DevOps Platform</span>
+          </div>
+          <div class="platform-base"><span>Docker</span><span>K8s</span><span>Cloud</span></div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section class="capability-strip" id="features">
+      <div class="container capability-grid">
+        <div class="capability"><span class="cap-icon docker"><img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker"></span><strong>Docker</strong><small>Containers</small></div>
+        <div class="capability"><span class="cap-icon k8s"><img src="https://cdn.simpleicons.org/kubernetes/326CE5" alt="Kubernetes"></span><strong>Kubernetes</strong><small>Orchestrate</small></div>
+        <div class="capability"><span class="cap-icon gitops"><img src="https://cdn.simpleicons.org/githubactions/2088FF" alt="GitHub Actions"></span><strong>GitOps / CI-CD</strong><small>Automate</small></div>
+        <div class="capability"><span class="cap-icon security"><img src="https://cdn.simpleicons.org/owasp/000000" alt="OWASP"></span><strong>DevSecOps</strong><small>Secure</small></div>
+        <div class="capability"><span class="cap-icon prometheus"><img src="https://cdn.simpleicons.org/prometheus/E6522C" alt="Prometheus"></span><strong>Prometheus</strong><small>Monitor</small></div>
+        <div class="capability"><span class="cap-icon grafana"><img src="https://cdn.simpleicons.org/grafana/F46800" alt="Grafana"></span><strong>Grafana</strong><small>Visualize</small></div>
+        <div class="capability"><span class="cap-icon aiops">
+      <svg viewBox="0 0 24 24" width="27" height="27" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M9 4.5C6.8 3.8 4.5 5.4 4.5 7.8c-2.2.4-3.5 2.2-3 4.2.3 1.5 1.6 2.5 3.1 2.7"/>
+        <path d="M15 4.5c2.2-.7 4.5.9 4.5 3.3 2.2.4 3.5 2.2 3 4.2-.3 1.5-1.6 2.5-3.1 2.7"/>
+        <path d="M9 4.5c-.7 1.4-.7 3 0 4.3M15 4.5c.7 1.4.7 3 0 4.3"/>
+        <path d="M9 8.8c-1.7.2-2.8 1.6-2.6 3.2.2 1.3 1.2 2.2 2.5 2.4M15 8.8c1.7.2 2.8 1.6 2.6 3.2-.2 1.3-1.2 2.2-2.5 2.4"/>
+        <path d="M9 14.4c.3 2 1.4 3.4 3 3.4s2.7-1.4 3-3.4"/>
+        <circle cx="9" cy="11" r=".7" fill="currentColor"/>
+        <circle cx="15" cy="11" r=".7" fill="currentColor"/>
+      </svg>
+    </span><strong>AIOps</strong><small>Intelligent Ops</small></div>
+        <div class="capability"><span class="cap-icon cloud">
+      <svg viewBox="0 0 24 24" width="27" height="27" fill="none">
+        <path d="M7.2 18.2h10.4c2.2 0 3.9-1.6 3.9-3.7 0-2-1.5-3.5-3.4-3.7C17.4 7.7 15 6 12.2 6c-2.6 0-4.8 1.5-5.7 3.8C4.1 9.9 2.5 11.5 2.5 13.7c0 2.5 2 4.5 4.7 4.5Z" stroke="#FF9900" stroke-width="1.8"/>
+        <path d="M8 19.8h8" stroke="#FF9900" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </span><strong>AWS / Cloud</strong><small>Host</small></div>
+      </div>
+    </section>
 
+    <section class="problem-section" id="about">
+      <div class="container problem-grid">
+        <div class="problem-copy">
+          <span class="eyebrow">THE PROBLEM</span>
+          <h2>Modern applications are complex.<br><span>Deploying them shouldn't be.</span></h2>
+          <p>Managing infrastructure, deployments, security and monitoring across multiple tools can be time-consuming, error-prone and hard to scale.</p>
+          <p>CloudForge solves this by bringing everything together in a unified, automated and cloud-native platform.</p>
+        </div>
+        <div class="why-card">
+          <span class="eyebrow">WHY CLOUDFORGE?</span>
+          <ul>
+            <li><span>✓</span> End-to-end DevOps workflow from code → deploy → monitor</li>
+            <li><span>✓</span> Automated CI/CD with GitOps</li>
+            <li><span>✓</span> Security by design (DevSecOps)</li>
+            <li><span>✓</span> Real-time observability and alerting</li>
+            <li><span>✓</span> Intelligent operations with AIOps</li>
+            <li><span>✓</span> Cloud-ready and cost efficient</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="architecture-section" id="architecture">
+      <div class="container">
+        <div class="section-heading dark-heading">
+          <span class="eyebrow">ARCHITECTURE</span>
+          <h2>From code to production.</h2>
+          <p>A simple, automated path from developer commit to cloud deployment.</p>
+        </div>
+        <div class="architecture-flow">
+          <div class="architecture-node"><span>01</span><strong>GitHub</strong><small>Source Code</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="architecture-node"><span>02</span><strong>CI/CD</strong><small>Build &amp; Test</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="architecture-node"><span>03</span><strong>Docker</strong><small>Container</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="architecture-node"><span>04</span><strong>Kubernetes</strong><small>Deploy &amp; Scale</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="architecture-node"><span>05</span><strong>Cloud</strong><small>Production</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stack-section" id="stack">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">TECHNOLOGY</span>
+          <h2>Built with modern DevOps tools.</h2>
+          <p>Every layer of CloudForge is chosen to demonstrate practical platform engineering skills.</p>
+        </div>
+        <div class="stack-grid">
+          <div class="stack-card"><span class="stack-dot mint-dot"></span><strong>Python</strong><small>Application</small></div>
+          <div class="stack-card"><span class="stack-dot orange-dot"></span><strong>Docker</strong><small>Containers</small></div>
+          <div class="stack-card"><span class="stack-dot mint-dot"></span><strong>Kubernetes</strong><small>Orchestration</small></div>
+          <div class="stack-card"><span class="stack-dot pink-dot"></span><strong>GitHub Actions</strong><small>CI/CD</small></div>
+          <div class="stack-card"><span class="stack-dot orange-dot"></span><strong>Terraform</strong><small>Infrastructure</small></div>
+          <div class="stack-card"><span class="stack-dot mint-dot"></span><strong>Prometheus</strong><small>Monitoring</small></div>
+          <div class="stack-card"><span class="stack-dot pink-dot"></span><strong>Grafana</strong><small>Observability</small></div>
+          <div class="stack-card"><span class="stack-dot orange-dot"></span><strong>AWS</strong><small>Cloud</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-card">
+        <div><span class="eyebrow">READY TO BUILD?</span><h2>Build something that scales.</h2><p>Explore CloudForge and follow the journey from source code to cloud-native deployment.</p></div>
+        <a href="https://github.com/viditbruhh/CloudForge" class="primary-btn" target="_blank" rel="noreferrer">Explore on GitHub <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand"><img src="logo.svg" alt=""><div><strong>CloudForge</strong><span>Cloud-native DevOps platform.</span></div></div>
+      <p>Built for learning. Designed for scale.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
