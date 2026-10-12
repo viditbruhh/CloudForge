@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudForge | DevOps Dashboard</title>
+  <link rel="icon" href="logo.svg">
+  <link rel="stylesheet" href="demo.css">
+</head>
+
+<body>
+
+  <header class="demo-nav">
+    <a href="index.html" class="brand">
+      <img src="logo.svg" alt="CloudForge">
+      <span>Cloud<span>Forge</span></span>
+    </a>
+
+    <div class="demo-nav-right">
+      <span class="environment">
+        <i></i>
+        Demo Environment
+      </span>
+
+      <a href="index.html" class="back-btn">← Back to CloudForge</a>
+    </div>
+  </header>
+
+  <main class="dashboard">
+
+    <section class="dashboard-heading">
+      <div>
+        <span class="eyebrow">CLOUDFORGE / DEMO</span>
+        <h1>DevOps Control Center</h1>
+        <p>
+          Explore how CloudForge connects delivery, containers,
+          orchestration, GitOps and observability.
+        </p>
+      </div>
+
+      <div class="status-pill">
+        <span></span>
+        Simulated Environment
+      </div>
+    </section>
+
+    <section class="metric-grid">
+
+      <article class="metric-card">
+        <span class="metric-label">DEPLOYMENTS</span>
+        <strong>12</strong>
+        <small>Demo releases</small>
+      </article>
+
+      <article class="metric-card">
+        <span class="metric-label">CONTAINERS</span>
+        <strong>3 / 3</strong>
+        <small>Running</small>
+      </article>
+
+      <article class="metric-card">
+        <span class="metric-label">K8S WORKLOADS</span>
+        <strong>4 / 4</strong>
+        <small>Healthy</small>
+      </article>
+
+      <article class="metric-card">
+        <span class="metric-label">PIPELINE</span>
+        <strong>PASS</strong>
+        <small>Last simulated run</small>
+      </article>
+
+    </section>
+
+    <section class="panel pipeline-panel">
+
+      <div class="panel-heading">
+        <div>
+          <span class="panel-kicker">DELIVERY PIPELINE</span>
+          <h2>Commit to production</h2>
+        </div>
+
+        <span class="panel-status">SUCCESS</span>
+      </div>
+
+      <div class="pipeline">
+
+        <div class="pipeline-step complete">
+          <div class="step-icon">✓</div>
+          <strong>GitHub</strong>
+          <small>Source</small>
+        </div>
+
+        <div class="pipeline-line complete"></div>
+
+        <div class="pipeline-step complete">
+          <div class="step-icon">✓</div>
+          <strong>Build</strong>
+          <small>CI/CD</small>
+        </div>
+
+        <div class="pipeline-line complete"></div>
+
+        <div class="pipeline-step complete">
+          <div class="step-icon">✓</div>
+          <strong>Test</strong>
+          <small>Quality</small>
+        </div>
+
+        <div class="pipeline-line complete"></div>
+
+        <div class="pipeline-step complete">
+          <div class="step-icon">✓</div>
+          <strong>Docker</strong>
+          <small>Container</small>
+        </div>
+
+        <div class="pipeline-line complete"></div>
+
+        <div class="pipeline-step complete">
+          <div class="step-icon">✓</div>
+          <strong>Kubernetes</strong>
+          <small>Deploy</small>
+        </div>
+
+      </div>
+
+    </section>
+
+    <div class="dashboard-grid">
+
+      <section class="panel health-panel">
+
+        <div class="panel-heading">
+          <div>
+            <span class="panel-kicker">SYSTEM HEALTH</span>
+            <h2>Platform overview</h2>
+          </div>
+        </div>
+
+        <div class="health-list">
+
+          <div class="health-row">
+            <div>
+              <strong>Application</strong>
+              <small>CloudForge API</small>
+            </div>
+            <span class="healthy">Healthy</span>
+          </div>
+
+          <div class="health-row">
+            <div>
+              <strong>Containers</strong>
+              <small>Docker workloads</small>
+            </div>
+            <span class="healthy">3 / 3</span>
+          </div>
+
+          <div class="health-row">
+            <div>
+              <strong>Kubernetes</strong>
+              <small>Cluster workloads</small>
+            </div>
+            <span class="healthy">Healthy</span>
+          </div>
+
+          <div class="health-row">
+            <div>
+              <strong>Observability</strong>
+              <small>Prometheus + Grafana</small>
+            </div>
+            <span class="healthy">Ready</span>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="panel deployment-panel">
+
+        <div class="panel-heading">
+          <div>
+            <span class="panel-kicker">LATEST RELEASE</span>
+            <h2>Deployment</h2>
+          </div>
+        </div>
+
+        <div class="release-version">
+          <span>v1.4.2</span>
+          <strong>Successful</strong>
+        </div>
+
+        <div class="release-info">
+          <div>
+            <small>Strategy</small>
+            <strong>GitOps</strong>
+          </div>
+
+          <div>
+            <small>Container</small>
+            <strong>cloudforge:latest</strong>
+          </div>
+
+          <div>
+            <small>Target</small>
+            <strong>Kubernetes</strong>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+
+    <section class="panel capabilities-panel">
+
+      <div class="panel-heading">
+        <div>
+          <span class="panel-kicker">PLATFORM CAPABILITIES</span>
+          <h2>CloudForge layers</h2>
+        </div>
+      </div>
+
+      <div class="capability-grid">
+
+        <div class="capability-item">
+          <span class="cap-icon mint">↻</span>
+          <div>
+            <strong>GitOps</strong>
+            <small>Declarative delivery workflow</small>
+          </div>
+        </div>
+
+        <div class="capability-item">
+          <span class="cap-icon orange">◇</span>
+          <div>
+            <strong>DevSecOps</strong>
+            <small>Security integrated into delivery</small>
+          </div>
+        </div>
+
+        <div class="capability-item">
+          <span class="cap-icon pink">⌁</span>
+          <div>
+            <strong>Observability</strong>
+            <small>Metrics and visualization</small>
+          </div>
+        </div>
+
+        <div class="capability-item">
+          <span class="cap-icon mint">✦</span>
+          <div>
+            <strong>AIOps</strong>
+            <small>Intelligent operations layer</small>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <div class="demo-note">
+      <strong>Demo mode</strong>
+      <span>
+        Dashboard values are simulated for the CloudForge portfolio demo.
+        Real Kubernetes, Prometheus and Grafana integrations will populate
+        this interface when the platform backend is connected.
+      </span>
+    </div>
+
+  </main>
+
+  <footer class="demo-footer">
+    <span>CloudForge</span>
+    <span>Build. Deploy. Observe. Scale.</span>
+  </footer>
+
+</body>
+</html>
